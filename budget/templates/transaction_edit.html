@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+
+{%block title_block%}
+    <title>Edit Transaction</title>
+{%endblock%}
+
+{%block main_block%}
+
+<h2 class="text-center fw-bolder mt-5">Edit Transaction</h2>
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-3"></div>
+
+        <div class="col-6 p-4 shadow">
+            <form action="" method="post">
+                {%csrf_token%}
+                {{form.as_p}}
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div class="col-3"></div>
+    </div>
+</div>
+
+{%endblock%}
