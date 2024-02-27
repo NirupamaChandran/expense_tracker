@@ -6,9 +6,9 @@
 
 {%block main_block%}
 
-    <h1 class="text-center fw-bolder mt-5">ExpenseTracker</h1>
+    <h1 class="text-center fw-bolder mt-5 mb-5">ExpenseTracker</h1>
 
-    <div style="width: 450px; height: 300px; margin-left: auto; margin-right: auto;">
+    <div style="width: 450px; height: 300px; margin-left: auto; margin-right: auto; ">
         <canvas id="categoryChart" width="200" height="200"></canvas>
     </div>
 
@@ -16,7 +16,7 @@
 
         {%for tp in type_total%}
 
-        <div class="border border-2 mx-3 px-5">
+        <div class="border border-2 shadow mx-3 px-5">
             <h2 class="fw-bold text-center">Total {{tp.type}}</h2>
             <h3 class="text-center">{{tp.type_sum}}</h3>
         </div>
@@ -41,7 +41,7 @@
                 <div class="card-body">
                    <div class="row">
                     <div class="col-2"></div>
-                    <div class="col-6 d-flex justify-content-center">
+                    <div class="col-6 d-flex justify-content-center shadow">
                         {{t.title}}
                         {{t.category}}
                         {{t.amount}}
@@ -65,7 +65,7 @@
 
     <div class="container d-flex justify-content-center mt-5">
         {%for cat in category_total%}
-        <div class="border border-2 mx-3 px-5">
+        <div class="border border-2 shadow mx-3 px-5">
             <h4 class="fw-bold text-center">Total {{cat.category}}</h4>
             <h6 class="text-center">{{cat.category_sum}}</h6>
         </div>

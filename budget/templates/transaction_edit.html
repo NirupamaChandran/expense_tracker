@@ -11,11 +11,11 @@
     <div class="row mt-5">
         <div class="col-3"></div>
 
-        <div class="col-6 p-4 shadow">
+        <div class="col-6 p-4 border border-dark shadow">
             <form action="" method="post">
                 {%csrf_token%}
                 {{form.as_p}}
-                <button type="submit">Add</button>
+                <button type="submit" class="bg-dark text-white">Add</button>
             </form>
         </div>
 
